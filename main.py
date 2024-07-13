@@ -1,18 +1,14 @@
 
 def getInput():
-    """
-    ########################################
-    Code Your Program here
-    ########################################
-    """
+    values = input("Enter multiple values separated by spaces: ")
+    return list(map(int, values.split()))
 
 
 def makeReverse(numbers):
-    """
-    ########################################
-    Code Your Program here
-    ########################################
-    """
+    reversed_list = []
+    while numbers:
+        reversed_list.append(numbers.pop())
+    return reversed_list
 
 
 def main():
